@@ -7,18 +7,30 @@ Using machine learning and neural networks predictions are made to help Alphabet
 
 ### Data Preprocessing
 
+In order to achieve greater the 75% accuracy the following variables were used:
+
 - The target variable for the model is whether the money is used effectively, this is represented by the IS_SUCCESSFUL variable.
 
-- APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, STATUS, INCOME_AMT, SPECIAL_CONSIDERATIONS, ASK_AMT are variables that are considered to be the features for this model.
+- APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, STATUS, INCOME_AMT, SPECIAL_CONSIDERATIONS, ASK_AMT, EIN and NAME are variables that are considered to be the features for this model.
 
-- EIN and NAME are neither targets nor feature variables and are removed from the input data.
+- No variable was removed from the model.
 
 ### Compiling, Training, and Evaluating the Model
-How many neurons, layers, and activation functions did you select for your neural network model, and why?
-Were you able to achieve the target model performance?
-What steps did you take to try and increase model performance?
 
-## Summary: Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and explain your recommendation.
+![Summary](https://github.com/mdhugge/Neural_Network_Charity_Analysis/blob/main/Images/Summary.png)
+
+- This model has 2 hidden layers, the first layer has 80 neurons and the second layer has 30 neurons. The two hidden layers use the relu acitivation function and the output layer uses the sigmoid activation function. 
+
+![Performance](https://github.com/mdhugge/Neural_Network_Charity_Analysis/blob/main/Images/Performance.png)
+
+- The model reached an accuracy of 79%, greater than the 75% target.
+
+- In order to increase model performace I use the EIN and NAME variables as features and I used binning to inocprate them into the data. 
+
+## Summary
+
+By adding the EIN and NAME varibales, which are indentification variables I was able to increase the accuracy of the model. 
 
 
-![Summary](https://github.com/mdhugge/Neural_Network_Charity_Analysiss/blob/main/Images/Summary.png)
+
+
